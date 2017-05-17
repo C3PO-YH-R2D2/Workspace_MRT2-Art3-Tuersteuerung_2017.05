@@ -9,6 +9,20 @@
 #include "DoorInterface.h"
 #include "DoorControl.h"
 
+struct in {
+	bool S1;
+	bool S2;
+	bool E1;
+	bool E2;
+	bool X1;
+	bool X2;
+	bool X3;
+	bool LS1;
+	bool LS2;
+	bool BE;
+	bool B;
+} eingaenge;
+
 
 DoorControl::DoorControl() : door_if(false, true)
 {
